@@ -1,0 +1,441 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>DemoVersion=False</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>AGVBA.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'SCSDemo|x86' ">
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\SCSDemo\</OutputPath>
+    <DefineConstants>DemoVersion=True</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>AGVBA.xml</DocumentationFile>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'SCSCustomer|x86' ">
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\SCSCustomer\</OutputPath>
+    <DefineConstants>DemoVersion=False</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>AGVBA.xml</DocumentationFile>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>
+    </DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{884377BE-F199-4BE1-B66A-4F09D2C53510}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>AGVBA</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>AGVBA</RootNamespace>
+    <StartupObject>AGVBA.%28None%29</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>Windows</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>..\..\..\..\..\Inetpub\wwwroot\AGDemo\AGVBA\</OutputPath>
+    <DocumentationFile>AGVBA.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DemoVersion=True</DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>..\..\..\..\..\Inetpub\wwwroot\AGDemo\AGVBA\</OutputPath>
+    <DocumentationFile>AGVBA.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DemoVersion=False</DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'SCSDemo|AnyCPU' ">
+    <OutputPath>..\..\..\..\..\Inetpub\wwwroot\AGDemo\AGVBA\</OutputPath>
+    <DocumentationFile>AGVBA.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DemoVersion=True</DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'SCSCustomer|AnyCPU' ">
+    <OutputPath>..\..\..\..\..\Inetpub\wwwroot\AGDemo\AGVBA\</OutputPath>
+    <DocumentationFile>AGVBA.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DemoVersion=False</DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DemoVersion=True</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <DocumentationFile>AGVBA.xml</DocumentationFile>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Management">
+      <Name>System.Management</Name>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web">
+      <Name>System.Web</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Management" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ActiveGanttVBACtl.bmp" />
+    <Compile Include="ActiveGanttVBACtl.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsAGVBARenderStream.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsButtonBorderStyle.vb" />
+    <Compile Include="clsButtonState.vb" />
+    <Compile Include="clsCell.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsCells.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsClientArea.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsCollectionBase.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsColumn.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsColumns.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsCustomBorderStyle.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsDesigner.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsDictionary.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsDrawing.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsGraphics.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsGrid.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsHorizontalScrollBar.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsHScrollBarTemplate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsItemBase.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsLayer.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsLayers.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsMath.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsMilestoneStyle.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsMouseKeyboardEvents.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsNode.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsPercentage.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsPercentages.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsPredecessor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsPredecessors.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsPredecessorStyle.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsProgressLine.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsRow.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsRows.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsScrollBarSeparator.vb" />
+    <Compile Include="clsScrollBarStyle.vb" />
+    <Compile Include="clsSelectionRectangleStyle.vb" />
+    <Compile Include="clsSplitter.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsString.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsStyle.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsStyles.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsTask.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsTasks.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsTaskStyle.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsTextFlags.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsTickMark.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsTickMarkArea.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsTickMarks.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsTier.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsTierAppearance.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsTierArea.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsTierColor.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsTierColors.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsTierFormat.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsTimeBlock.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsTimeBlocks.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsTimeLine.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsTimeLineScrollBar.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsTreeview.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsVerticalScrollBar.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsView.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsViews.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsViewState.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsVScrollBarTemplate.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsXML.vb" />
+    <Compile Include="CustomTierDrawEventArgs.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DateTime.vb" />
+    <Compile Include="DesigntimeRegistryLicense.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DrawEventArgs.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ErrorEventArgs.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Globals.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="KeyEventArgs.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MouseEventArgs.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NodeEventArgs.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectAddedEventArgs.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectSelectedEventArgs.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectStateChangedEventArgs.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PredecessorDrawEventArgs.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PredecessorExceptionEventArgs.vb" />
+    <Compile Include="RegistryLicenseProvider.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RuntimeRegistryLicense.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScrollEventArgs.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ToolTipEventArgs.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="Styles.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
